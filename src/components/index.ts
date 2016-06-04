@@ -1,5 +1,6 @@
-import {App} from './app';
+import {FilterableProductTable} from './FilterableProductTable';
+
 
 export {
-  App as AppComponent
+  FilterableProductTable as FilterableProductTable
 }
