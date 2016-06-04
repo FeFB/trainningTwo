@@ -1,23 +1,23 @@
 import * as React from 'react';
 
 interface IProductCategoryProps {
-    category : string;
+    category: string;
 }
 
-interface IProductCategoryState {}
+interface IProductCategoryState { }
 
-export class ProductCategoryRow extends React.Component <IProductCategoryProps, IProductCategoryState> {
+export class ProductCategoryRow extends React.Component<IProductCategoryProps, IProductCategoryState> {
 
-  constructor(props: IProductCategoryProps) {
-    super(props);
-  }
+    constructor(props: IProductCategoryProps) {
+        super(props);
+    }
 
-  render() : JSX.Element {
+    render(): JSX.Element {
 
-    return (
-      <tr>
-        <th colSpane = "2"> { this.props.category  } </th>
-      </tr>
-    );
-  }
+        return (
+            <tr>
+                <th colSpane = "2"> { this.props.category  } </th>
+            </tr>
+        );
+    }
 }

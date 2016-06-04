@@ -48,15 +48,8 @@
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(2);
 	var _1 = __webpack_require__(3);
-	var PRODUCTS = [
-	    { category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football' },
-	    { category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball' },
-	    { category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball' },
-	    { category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch' },
-	    { category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5' },
-	    { category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7' }
-	];
-	ReactDOM.render(React.createElement(_1.FilterableProductTable, {products: PRODUCTS}), document.getElementById("root"));
+	var models_1 = __webpack_require__(9);
+	ReactDOM.render(React.createElement(_1.FilterableProductTable, {products: models_1.ProductsModel}), document.getElementById("root"));
 
 
 /***/ },
@@ -252,6 +245,30 @@
 	    return SearchBar;
 	}(React.Component));
 	exports.SearchBar = SearchBar;
+
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Model_1 = __webpack_require__(10);
+	exports.ProductsModel = Model_1.PRODUCTS;
+
+
+/***/ },
+/* 10 */
+/***/ function(module, exports) {
+
+	"use strict";
+	exports.PRODUCTS = [
+	    { category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football' },
+	    { category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball' },
+	    { category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball' },
+	    { category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch' },
+	    { category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5' },
+	    { category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7' }
+	];
 
 
 /***/ }
