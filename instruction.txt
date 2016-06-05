@@ -1,3 +1,4 @@
 1 - npm install
 2 -  tsd install react react-dom --save 
 3 - npm run watch
+./node_modules/.bin/http-server -a localhost -p 8000 -c-1

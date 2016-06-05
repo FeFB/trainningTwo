@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "rm -rf build && webpack --watch",
-    "serve": "./node_modules/.bin/http-server . -p 9090",
+    "server": "./node_modules/.bin/http-server -a localhost -p 9090 -c-1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
